@@ -1,4 +1,15 @@
+def hello():
+    print("-------------------")
+    print("  Приветсвуем вас  ")
+    print("      в игре       ")
+    print("  крестики-нолики  ")
+    print("-------------------")
+
 def view():
+    print(" формат ввода: x y ")
+    print(" x - номер строки  ")
+    print(" y - номер столбца ")
+    print()
     print("  | 1 | 2 | 3 | ")
     print("  -------------")
     for i, j in enumerate(board):
@@ -51,6 +62,7 @@ def check_win():
             return True
     return False
 
+hello()
 board = [[" "] * 3 for i in range(3) ]
 count = 0
 while True:
