@@ -6,7 +6,7 @@ def hello():
     print("-------------------")
 
 def view():
-    print(" формат ввода: x y ")
+    print(" формат ввода: xy (без пробелов)")
     print(" x - номер строки  ")
     print(" y - номер столбца ")
     print()
@@ -20,7 +20,7 @@ def view():
 
 def move():
     while True:
-        cords = input("Введите координаты хода: ").split()
+        cords = (' '.join(input('Введите координаты хода: '))).split()
         
         if len(cords) != 2:
             print("Введите 2 координаты!")
